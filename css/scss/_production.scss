@@ -1,0 +1,154 @@
+/* start production styles */
+
+#production {
+    //background: #fff;
+    .in {
+        padding-top: 90px;
+        padding-bottom: 55px;
+    }
+}
+.slider_primary {
+    margin: 0 0 50px;
+    padding: 0;
+}
+.primary_item {
+    .image {
+        width: 750/1530*100%;
+        height: 337px;
+        float: left;
+        position: relative;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            //opacity: 0.3;
+            display: inline-block;
+        }
+
+        .mark {
+            position: absolute;
+            top: 0;
+            right: 36px;
+            width: 64px;
+            height: 64px;
+            border-radius: 45px;
+            line-height: 64px;
+            background: #F83F41;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .info {
+        margin-left: 50%;
+        padding-left: 145px;
+        padding-top: 16px;
+        line-height: 20px;
+
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 33px;
+            margin-bottom: 3px;
+            background: url(images/decor.png) no-repeat left top;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.slider_secondary {
+    width: 57.52%;
+    position: absolute;
+    top: 336px;
+    text-align: center;
+        margin: 0 -65px 60px;
+        padding: 0 65px;
+
+    .slick-list {
+        padding: 15px;
+        margin: 0 -30px;
+    }
+
+    .slick-track {
+        left: -33.33%;
+    }
+}
+
+.item-2 .slider_secondary{
+    width: 360px;
+    left: 18%;
+
+    .slick-track {
+        left: -100%;
+    }
+}
+
+.secondary_item {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.1);
+    border-radius: 13px;
+    box-sizing: border-box;
+    height: 200px;
+    padding: 15px 25px;
+    margin: 15px;
+    overflow: hidden;
+    //opacity: 0.3;
+    @include transition(all);
+
+    .image {
+        height: 125px;
+        line-height: 125px;
+        img {
+            width: 100%;
+            max-width: 130px;
+            max-height: 100%;
+            object-fit: contain;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &.slick-current {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 1300px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+// @media screen and (max-width: 900px) {
+//     footer {
+
+//     }
+// }
+
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 500px) {
+	
+}
+// @media screen and (max-width: 450px) {
+// 	footer {
+
+// 	}
+// }
+
+
+
+/* end production styles */

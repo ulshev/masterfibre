@@ -1,0 +1,276 @@
+.gUniFormModalWindow.form_block {
+    background: rgba(0, 0, 21, 0.6);
+
+
+    .gUniFormModalWindowContainer {
+        box-shadow: 0;
+        border-radius: 13px;
+        line-height: 28px;
+        padding: 3px;
+        width: 795px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .gUniFormContainer {
+        background: #fff;
+        border-radius: 5px;
+        padding: 60px 90px 20px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    form {
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .uFormHeading {
+        font-family: $font_family_os;
+        line-height: 28px;
+        font-weight: 800;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+        width: 275px;
+        margin-bottom: 20px;
+    }
+
+    .gUniForm input[type="text"] {
+        padding: 10px 30px;
+        height: 60px;
+
+        &:focus {
+            border: 2px solid #FFD300;
+        }
+    }
+
+    .personalInfo {
+        //display: inline-block;
+        float: left;
+        vertical-align: top;
+        width: 280px;
+        //margin-right: 20px;
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 19px;
+
+
+        input[type=checkbox]:not(checked) + label:before {
+            top: 0px;
+        }
+        input[type=checkbox]:not(checked) + label:after {
+            top: 0px;
+        }
+    }
+
+    .gUniForm .uformTools {
+        margin-top: 0;
+        float: right;
+        width: 280px;
+    }
+
+    .gUniForm .uFormButton:last-child {
+        padding-left: 0px;
+    }
+    .gUniForm .uFormButton:first-child {
+        padding-right: 0px;
+    }
+
+    .gUniForm .uFormButton {
+        width: 100%;
+    }
+
+    .gUniFormModalWindowExit {
+        background: url(images/exit.png) 0 0 no-repeat transparent;
+        right: 30px;
+        top: 30px;
+        height: 20px;
+        width: 20px;
+        @include transition(all);
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    
+    &.modal2 {
+        .gUniFormModalWindowContainer {
+            width: 490px;
+        }
+        form {
+            max-width: 870px;
+        }
+        .gUniForm .uformTools {
+            float: none;
+            width: 100%;
+            .uFormSubmit {
+                width: 100%;
+            }
+        }
+        .uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+            width: 100%;
+            margin-left: 0px;
+        }
+        .personalInfo {
+            float: none;
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 695px;
+        }
+
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 995px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 595px;
+        }
+        .gUniFormContainer {
+            padding: 40px 30px 0px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+            width: 255px;
+            margin-bottom: 20px;
+        }
+        .personalInfo {
+            width: 250px;
+        }
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 895px;
+            }
+            form {
+                max-width: 810px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 550px;
+        }
+        .gUniFormContainer {
+            padding: 40px 20px 0px;
+        }
+        .uFormHeading {
+            line-height: 26px;
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .personalInfo {
+            width: auto;
+            float: none;
+        }
+        .gUniForm .uformTools {
+            float: none;
+            width: 100%;
+            text-align: center;
+            a {
+                float: none;
+            }
+        }
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 450px;
+        }
+        .gUniFormModalWindowExit {
+            right: 20px;
+            top: 20px;
+        }
+        form {
+            padding-bottom: 10px;
+        }
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 350px;
+        }
+        .uFormHeading {
+            line-height: 24px;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 350px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 280px;
+        }
+        &.modal_big {
+            .gUniFormModalWindowContainer {
+                width: 280px;
+            }
+        }
+    }
+}

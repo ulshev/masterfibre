@@ -1,0 +1,518 @@
+/* Start:/local/components/dweb/uni.form/templates/modal-window/style.css?14930156439503*/
+.gUniFormModalWindow{
+	-webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: rgba(0, 5, 10, 0.75);
+    line-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.gUniFormModalWindowContainer{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+	background-color: #ffffff;
+	vertical-align: middle;
+	display: inline-block;
+    border-radius: 14px;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+    margin: 24px 0px;
+    padding: 24px;
+    width: 500px;
+}
+
+.gUniFormHideScrollBar{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    width: 120%;
+}
+
+.gUniFormCn100{
+	position: relative;
+    height: 100%;
+    width: 100vw;
+}
+
+.gUniFormModalWindowExit{
+	background: url(http://77.246.158.124/local/components/dweb/uni.form/templates/modal-window/images/exit.png) 0 0 no-repeat transparent;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+	position: absolute;
+	display: block;
+	right: -24px;
+	height: 54px;
+	width: 54px;
+	top: -24px;
+}
+
+.gUniFormModalWindowExit:hover{
+	background-position: -54px 0px;
+}
+
+.gUniFormModalWindowExit:active{
+	background-position: -108px 0px;
+}
+
+
+.gUniFormModalWindow .uFormHeading{
+	font-family: "roboto_medium", "robotomedium";
+	text-align: center;
+	line-height: 36px;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.gUniFormModalWindow .uFormDescription{
+	text-align: center;
+	line-height: 28px;
+	margin: 12px 0px;
+	font-size: 16px;
+	color: #222222;
+}
+
+.uLabel{
+	margin: 12px 0px;
+	overflow: hidden;
+}
+
+.uLabel .uName,
+.uLabel .uIcon{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.uLabel .uName{
+	margin-top: 3px;
+}
+
+.uLabel .uIcon{
+	margin-right: 6px;
+}
+
+.uLabel .uIcon img{
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.uLabel .uHint{
+	margin-top: 3px;
+	color: #888888;
+	float: right;
+}
+
+.uError,
+.uFormGlobalErrors{
+	color: #ff0000;
+}
+
+.uError,
+.uFormGlobalErrors{
+	line-height: 28px;
+}
+
+.uCaptchaContainer{
+	margin-bottom: 12px;
+	margin-top: 12px;
+	height: 40px;
+}
+
+.uCaptchaImage{
+	max-width: 100%;
+	height: 40px;
+}
+
+.gUniForm input,
+.gUniForm textarea,
+.gUniForm select{
+	font-family: "roboto_ltregular", "robotoregular", "roboto";
+	transition: all 0.2s ease-in-out;
+	background-color: #fdfdfd;
+	border: 1px solid #e7e7e7;
+	box-sizing: border-box;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #000000;
+	outline: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.gUniForm input:focus,
+.gUniForm textarea:focus,
+.gUniForm select:focus{
+	border: 1px solid #cccccc;
+	background-color: #fcfcfc;
+}
+
+.gUniForm input[type="text"]{
+	padding: 0 6px;
+	height: 50px;
+}
+
+.gUniForm input[type="file"]{
+	background-color: transparent;
+	margin: 4px;
+	border: 0;
+}
+
+.gUniForm input[type="checkbox"]{
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 12px;
+	width: auto;
+}
+
+.gUniForm input[type="checkbox"] + label,
+.gUniForm input[type="radio"] + label {
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.gUniForm input[type="checkbox"]:not(checked),
+.gUniForm input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.gUniForm input[type="checkbox"]:not(checked) + label,
+.gUniForm input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+.gUniForm input[type="checkbox"] + label:before {
+	background: url(/local/components/dweb/uni.form/templates/modal-window/images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.gUniForm input[type="radio"] + label:before {
+	background: url(/local/components/dweb/uni.form/templates/modal-window/images/radio.png) 0 0 no-repeat transparent;
+}
+
+.gUniForm input[type="checkbox"].error + label:before,
+.gUniForm input[type="radio"].error + label:before{
+	border: 1px solid #ff0000;
+	border-radius: 5px;
+}
+
+.gUniForm input[type="checkbox"]:not(checked) + label:before,
+.gUniForm input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 1px;
+}
+
+.gUniForm input[type="checkbox"]:not(checked) + label:hover:before,
+.gUniForm input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+.gUniForm input[type="checkbox"]:checked + label:before,
+.gUniForm input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+.gUniForm input[type="checkbox"]:checked + label:hover:before,
+.gUniForm input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+.gUniForm input[type="checkbox"]:disabled + label,
+.gUniForm input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+.gUniForm input[type="checkbox"]:disabled + label:before,
+.gUniForm input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+.gUniForm textarea{
+	padding: 12px 6px;
+	height: 120px;
+}
+
+.gUniForm select{
+	padding: 12px 6px;
+}
+
+.gUniForm .error{
+	border: 1px solid #ff0000 !important;
+	position: relative;
+}
+
+.gUniForm .error:focus{
+	border: 1px solid #ff0000;
+}
+
+.gUniForm .uformTools{
+	overflow: hidden;
+	margin-top: 12px;
+	padding-bottom: 1px;
+}
+
+.gUniForm .uFormButton{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+}
+
+.gUniForm .uFormButton:first-child{
+	padding-right: 6px;
+}
+
+.gUniForm .uFormButton:last-child{
+	padding-left: 6px;
+}
+
+.gUniForm .uRequired{
+	vertical-align: middle;
+	display: inline-block;
+	color: #ff0000;
+}
+
+.gUniForm .uFormSubmit,
+.gUniForm .uFormReset{
+	transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 55px;
+	height: 55px;
+	width: 100%;
+}
+
+.gUniForm .uFormSubmit.loading{
+	transition: none;
+}
+
+.gUniForm .uFormSubmit{
+	background-color: #0d7cca;
+	color: #ffffff;
+}
+
+.gUniForm .uFormSubmit:hover{
+    background-color: #068ae6;
+}
+
+.gUniForm .uFormSubmit:active{
+	position: relative;
+	top: 1px;
+}
+
+.gUniForm .uFormSubmit.loading{
+	background-image: url(/local/components/dweb/uni.form/templates/modal-window/images/loading.gif);
+	background-color: #000000 !important;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	pointer-events: none;
+	color: #dddddd;
+	opacity: 0.1;
+}
+
+.gUniForm .uFormReset{
+	border: 1px solid #e5e5e5;
+	color: #888888;
+}
+
+.gUniForm .uFormReset:hover{
+	border: 1px solid #cfcfcf;
+}
+
+.gUniForm .uFormReset:active{
+	position: relative;
+	top: 1px;
+}
+
+.gUniForm .uToolsIcon{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 12px;
+	margin-top: -1px;
+}
+
+.gUniForm .eFormHidden{
+	display: none;
+}
+
+.gUniFormSuccess{
+	-webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: rgba(0, 5, 10, 0.75);
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.gUniFormSuccessContainer{
+    /*box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);*/
+    border: 14px solid rgba(255, 255, 255, 0.12);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: transparent;
+    border-radius: 14px;
+    margin-left: -250px;
+    margin-top: -125px;
+    position: absolute;
+    line-height: 270px;
+    max-width: 100%;
+    height: 270px;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+}
+
+.gUniFormSuccessBg{
+    background-color: #ffffff;
+   	border-radius: 4px;
+}
+
+.gUniFormSuccessMiddler{
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 21px;
+}
+
+.gUniFormSuccessHeading{
+	font-family: "roboto_medium";
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 30px;
+	padding: 0 24px;
+	font-size: 24px;
+}
+
+.gUniFormSuccessText{
+	text-align: center;
+	line-height: 21px;
+	margin-top: 12px;
+	padding: 0 24px;
+}
+
+.gUniFormButtonContainter{
+	text-align: center;
+}
+
+.gUniFormSuccessButton{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background-color: #000000;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 18px;
+	padding: 0 24px;
+	color: #ffffff;
+	height: 40px;
+}
+
+.gUniFormSuccessButton:hover{
+	color: #ffffff;
+	opacity: 0.85;
+}
+
+.gUniFormSuccessButton:active{
+	position: relative;
+	top: 1px;
+}
+
+.gUniFormSuccessExit{
+	background: url(/local/components/dweb/uni.form/templates/modal-window/images/exit.png) 0 0 no-repeat transparent;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+	position: absolute;
+	display: block;
+	right: -24px;
+	height: 54px;
+	width: 54px;
+	top: -24px;
+}
+
+.gUniFormSuccessExit:hover{
+	background-position: -54px 0px;
+}
+
+.gUniFormSuccessExit:active{
+	background-position: -108px 0px;
+}
+
+.eFormRequired{
+	margin-top: 12px;
+}
+
+.eFormBlur{
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-ms-filter: blur(3px);
+	-o-filter: blur(3px);
+	filter: blur(3px);
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 650px) {
+	.gUniFormSuccessContainer{
+		margin-left: -150px;
+		width: 300px;
+	}
+}
+/* End */

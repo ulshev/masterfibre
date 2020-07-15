@@ -1,0 +1,103 @@
+/* start services styles */
+
+#services {
+    background:  url(images/bg_services.jpg) no-repeat center / auto 100%;
+    .in {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    .text {
+        float: right;
+        width: 360px;
+        padding-top: 22px;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+    }
+}
+
+.services {
+    margin: 0 -15px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    &:after {
+		@include clear();
+    }
+    .service_item {
+        float: left;
+        width: calc(25% - 30px);
+        height: 420px;
+        margin: 0 15px 30px;
+        box-sizing: border-box;
+        padding: 30px 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 13px;
+        text-align: center;
+
+        .image {
+            height: 260px;
+            margin-bottom: 26px;
+
+            img {
+                vertical-align: top;
+                max-height: 100%;
+            }
+        }
+
+        .h3 {
+            max-width: 280px;
+            margin: 0 auto;
+            padding: 0 30px;
+            min-height: 88px;
+        }
+
+        &:nth-child(1) {
+            background: linear-gradient(220.67deg, rgba(138, 209, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(2) {
+            background: linear-gradient(220.67deg, rgba(255, 201, 207, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(3) {
+            background: linear-gradient(220.67deg, rgba(255, 250, 207, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(4) {
+            background: linear-gradient(220.67deg, rgba(150, 254, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 1300px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+// @media screen and (max-width: 900px) {
+
+// }
+
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 500px) {
+	
+}
+// @media screen and (max-width: 450px) {
+
+// }
+
+
+
+/* end services styles */

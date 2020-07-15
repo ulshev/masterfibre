@@ -1,0 +1,283 @@
+/* start footer styles */
+
+#pre_foo {
+    display: table-row;
+    height: 100%;
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    z-index: auto;
+    box-sizing: border-box;
+	clear: both;
+	color: #fff;
+	background: url(images/bg_footer.jpg) center top no-repeat;
+
+    .in { 
+		padding-top: 58px;
+		z-index: 3;
+        
+        &:after { 
+            @include clear();
+        }
+    }
+    
+    a {
+		color: #fff;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+    }
+    .foo_left {
+		float: left;
+		width: 555/1530*100%;
+		max-width: 270px;
+		font-weight: 400;
+	}
+	.foo_right {
+		float: right;
+		width: 555/1530*100%;
+		max-width: 280px;
+		padding-top: 45px;
+	}
+
+    .foo_logo {
+		margin-bottom: 24px;
+		//width: 100%;
+		max-width: 100px;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.cont {
+		position: relative;
+		padding-left: 32px;
+		background: left 3px no-repeat;
+		font-weight: 700;
+		margin-bottom: 40px;
+	}
+	
+	.tel {
+		background-image: url(images/icon_tel.png);
+
+		.order_call {
+			font-weight: 600;
+			display: inline-block;
+			margin-top: 9px;
+			line-height: 20px;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+		
+	.address {
+		background-image: url(images/icon_address.png);
+		margin-top: -7px;
+		padding-top: 5px;
+	}
+	.mail {
+		background-image: url(images/icon_mail.png);
+		background-position: 3px 4px;
+	}
+    
+    .foo_menu {
+		width: 42.45%;
+		position: relative;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+		margin: 0 auto 0;
+		padding-top: 50px;
+		
+		>ul {
+			text-align: justify;
+			margin-right: -69px;
+
+			li {
+				display: inline-block;
+				text-align: left;
+				vertical-align: top;
+				width: 44.2%;
+				margin: 0 0 31px;
+			}
+
+			&::after {
+				display: inline-block;
+				width: 99%;
+				content: '';
+			}
+		}
+	
+    }
+    .foo_text {
+		p {
+			margin-bottom: 38px;
+		}
+		
+		.h5 {
+			margin-bottom: 11px;
+			font-weight: 600;
+		}
+	}
+
+	.button {
+		font-weight: 500;
+	}
+    
+    #copy {
+		padding-bottom: 30px;
+		text-align: center;
+		font-weight: 400;
+		clear: both;
+    }
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+    footer {
+		.foo_menu {
+			> ul {
+				margin-right: 0px;
+			}
+		}
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+		.foo_menu {
+			padding-top: 30px;
+			//width: 120px;
+			> ul {
+				li {
+					//display: block;
+					//width: auto;
+					margin: 0 0 20px;
+				}
+			}
+		}
+		.foo_right {
+			padding-top: 30px;
+		}
+		.button {
+			padding: 0 30px;
+			height: 50px;
+			font-size: 18px;
+			line-height: 50px;
+			letter-spacing: 0.2px;
+			margin-bottom: 30px;
+		}
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+		.in {
+			padding-top: 20px;
+		}
+		.foo_logo {
+			margin-bottom: 20px;
+			width: 80px;
+		}
+		.foo_text p {
+			line-height: 20px;
+			margin-bottom: 25px;
+		}
+		.foo_menu {
+			display: none;
+		}
+		.foo_left, .foo_right {
+			width: 48%;
+			max-width: 360px;
+		}
+
+		.button {
+			padding: 0 20px;
+			height: 40px;
+			font-size: 16px;
+			line-height: 40px;
+			letter-spacing: 0.1px;
+			margin-bottom: 30px;
+		}
+    }
+}
+
+// @media screen and (max-width: 900px) {
+//     footer {
+
+//     }
+// }
+
+@media screen and (max-width: 700px) {
+    footer {
+		.foo_logo {
+			float: left;
+			width: 60px;
+			margin-bottom: 10px;
+		}
+		.foo_left, .foo_right {
+			width: auto;
+			margin: 0 auto 10px;
+			max-width: none;
+			float: none;
+			text-align: center;
+		}
+		.cont {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 10px 20px;
+			text-align: left;
+		}
+
+		.foo_text {
+			float: right;
+			padding-top: 15px;
+			p {
+				display: none;
+			}
+		}
+		#copy {
+			font-size: 14px;
+			line-height: 22px;
+		} 
+    }
+}
+@media screen and (max-width: 500px) {
+	footer {
+		.foo_bottom {
+			padding-top: 0px;
+			text-align: center;
+		}
+		#copy {
+			margin: 0 0 20px;
+		} 
+		footer .foo_text {
+			padding-top: 8px;
+		}
+		.button {
+			font-size: 14px;
+			letter-spacing: 0px;
+			margin-bottom: 20px;
+			padding: 0 15px;
+		}
+	}
+}
+// @media screen and (max-width: 450px) {
+// 	footer {
+
+// 	}
+// }
+
+
+
+/* end footer styles */

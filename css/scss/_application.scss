@@ -1,0 +1,131 @@
+/* start application styles */
+
+#usage {
+    background:  url(images/bg_application.jpg) center top no-repeat;
+    .in {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+}
+
+.application {
+    margin: 0 -15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    &:after {
+		@include clear();
+    }
+    .item {
+        float: left;
+        width: calc(25% - 30px);
+        height: 300px;
+        margin: 0 15px 30px;
+        box-sizing: border-box;
+        padding: 30px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 13px;
+        text-align: center;
+
+        .image {
+            height: 185px;
+            line-height: 185px;
+
+            img {
+                vertical-align: top;
+                max-height: 100%;
+            }
+        }
+
+        .h3 {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        &:nth-child(1), &:nth-child(4) {
+            width: calc(50% - 30px);
+            height: 360px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+                height: 300px;
+                line-height: 300px;
+                //float: left;
+                width: 60%;
+            }
+
+            .h3 {
+                //margin-left: 390px;
+                text-align: left;
+                font-size: 22px;
+                line-height: 30px;
+                max-width: 40%;
+                padding-left: 8px;
+            }
+        }
+        &:nth-child(4) {
+            flex-direction: row-reverse;
+            .image {
+                width: 77%;
+            }
+            .h3 {
+                max-width: 16%;
+                padding-left: 60px;
+                padding-top: 14px;
+            }
+        }
+        &:nth-child(n+3) {
+            float: right;
+        }
+        &:nth-child(1) {
+            background: linear-gradient(146.97deg, rgba(228, 207, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(2) {
+            background: linear-gradient(211.6deg, rgba(255, 201, 207, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(3) {
+            background: linear-gradient(211.6deg, rgba(138, 209, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(4) {
+            background: linear-gradient(236.97deg, rgba(150, 254, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(5) {
+            background: linear-gradient(211.6deg, rgba(138, 209, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+        &:nth-child(6) {
+            background: linear-gradient(211.6deg, rgba(255, 201, 207, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 1300px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+// @media screen and (max-width: 900px) {
+
+// }
+
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 500px) {
+	
+}
+// @media screen and (max-width: 450px) {
+
+// }
+
+
+
+/* end application styles */
