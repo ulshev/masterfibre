@@ -164,11 +164,11 @@ p {
         line-height: 33px;
     }
     h2, .h2 {
-        font-size: 22px;
+        font-size: 20px;
 		line-height: 24px;
     }
     h3, .h3 {
-        font-size: 18px;
+        font-size: 16px;
 		line-height: 22px;
     }
     h4, .h4 {
@@ -188,7 +188,7 @@ p {
 
 @media screen and (max-width: 800px) {
     h1, .h1 {
-        font-size: 24px;
+        font-size: 23px;
         line-height: 29px;
     }
     h2, .h2 {
@@ -196,7 +196,7 @@ p {
 		line-height: 24px;
     }
     h3, .h3 {
-        font-size: 16px;
+        font-size: 14px;
 		line-height: 20px;
     }
     h4, .h4 {
@@ -206,11 +206,11 @@ p {
 }
 @media screen and (max-width: 600px) {
     h1, .h1 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
     }
     h2, .h2 {
-        font-size: 18px;
+        font-size: 17px;
 		line-height: 22px;
     }
 }
@@ -370,28 +370,28 @@ p {
 // @media screen and (max-width: 1000px) {
 
 // }
-// @media screen and (max-width: 450px) {
-//     .slick-slider {
-// 		margin: 0 0px;
-// 		padding: 0 30px;
-// 	}
+@media screen and (max-width: 450px) {
+    .slick-slider {
+		margin: 0 0px;
+		padding: 0 40px;
+	}
 
-// 	.slick-arrow {
-// 		margin-top: -15px;
-// 		width: 30px;
-// 		height: 30px;
+	// .slick-arrow {
+	// 	margin-top: -15px;
+	// 	width: 30px;
+	// 	height: 30px;
 		
-// 		&:before {
-// 			width: 8px;
-// 			height: 8px;
-// 			top: 8px;
-// 			left: 9px;
-// 		}
-// 	}
-// 	.slick-next:before {
-// 		left: 8px;
-// 	}
-// }
+	// 	&:before {
+	// 		width: 8px;
+	// 		height: 8px;
+	// 		top: 8px;
+	// 		left: 9px;
+	// 	}
+	// }
+	// .slick-next:before {
+	// 	left: 8px;
+	// }
+}
 
 .tabs_container {
 	position: relative;
@@ -450,32 +450,54 @@ p {
 }
 
 @media screen and (max-width: 1300px) {
-    // .tabs_container {
-	// 	margin-bottom: 40px;
-	// }
+    .tab_buttons {
+		span, a {
+			margin: 0 20px;
+		}
+	}
 }
 
 @media screen and (max-width: 1000px) {
-	// .tabs_container {
+	.tab_buttons {
+		span, a {
+			margin: 0 15px;
+			font-size: 16px;
 
-	// }
-	// .tab_buttons {
-
-	// }
+			&.active {
+				padding: 8px 25px;
+			}
+		}
+	}
 }
-@media screen and (max-width: 600px) {
-    // .tab_buttons {
-	// 	
-	// }
+@media screen and (max-width: 800px) {
+    .tab_buttons {
+		span, a {
+			margin: 0 8px;
+			font-size: 14px;
+
+			&.active {
+				padding: 8px 15px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {
-	// .tabs_container {
-
-	// }
-	// .tab_buttons {
-
-	// }
+	.tab_buttons {
+		span, a {
+			width: 45%;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.tab_buttons {
+		span, a {
+			width: 90%;
+			margin-bottom: 10px;
+		}
+	}
 }
 
 .fancybox-enabled {

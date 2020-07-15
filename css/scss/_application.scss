@@ -33,6 +33,7 @@
             img {
                 vertical-align: top;
                 max-height: 100%;
+                display: inline-block;
             }
         }
 
@@ -41,43 +42,7 @@
             margin: 0 auto;
         }
 
-        &:nth-child(1), &:nth-child(4) {
-            width: calc(50% - 30px);
-            height: 360px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .image {
-                height: 300px;
-                line-height: 300px;
-                //float: left;
-                width: 60%;
-            }
-
-            .h3 {
-                //margin-left: 390px;
-                text-align: left;
-                font-size: 22px;
-                line-height: 30px;
-                max-width: 40%;
-                padding-left: 8px;
-            }
-        }
-        &:nth-child(4) {
-            flex-direction: row-reverse;
-            .image {
-                width: 77%;
-            }
-            .h3 {
-                max-width: 16%;
-                padding-left: 60px;
-                padding-top: 14px;
-            }
-        }
-        &:nth-child(n+3) {
-            float: right;
-        }
+       
         &:nth-child(1) {
             background: linear-gradient(146.97deg, rgba(228, 207, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
         }
@@ -99,32 +64,135 @@
     }
 }
 
-
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1300px) {
+    .application {
+        .item {
     
+            &:nth-child(1), &:nth-child(4) {
+                width: calc(50% - 30px);
+                height: 360px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .image {
+                    height: 300px;
+                    line-height: 300px;
+                    //float: left;
+                    width: 60%;
+                }
+    
+                .h3 {
+                    //margin-left: 390px;
+                    text-align: left;
+                    font-size: 22px;
+                    line-height: 30px;
+                    max-width: 40%;
+                    padding-left: 8px;
+                }
+            }
+            &:nth-child(4) {
+                flex-direction: row-reverse;
+                .image {
+                    width: 77%;
+                }
+                .h3 {
+                    max-width: 16%;
+                    padding-left: 60px;
+                    padding-top: 14px;
+                }
+            }
+            &:nth-child(n+3) {
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1300px) {
+    .application {
+        .item:nth-child(1), .item:nth-child(4) {
+            .image {
+                width: 80%;
+            }
+            .h3 {
+                max-width: 20%;
+                padding-left: 0px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1600px) {
+    .application {
+        .item {
+            //padding: 30px 20px;
+            .image {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
-    
+    #usage {
+        .in {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    }
+    .application {
+        .item {
+            width: calc(33.33% - 30px);
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    
+    #usage {
+        .in {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+    }
+    .application {
+        padding-bottom: 10px;
+        .item {
+            padding: 20px;
+            height: 250px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            .image {
+                height: 150px;
+                line-height: 150px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
-// @media screen and (max-width: 900px) {
 
+// @media screen and (max-width: 800px) {
+    
 // }
 
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 450px) {
+    #usage {
+        .in {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    }
+    .application {
+        padding-bottom: 10px;
+        .item {
+            padding: 15px;
+            height: 220px;
+            .image {
+                height: 120px;
+                line-height: 120px;
+            }
+        }
+    }
 }
-@media screen and (max-width: 500px) {
-	
-}
-// @media screen and (max-width: 450px) {
-
-// }
 
 
 

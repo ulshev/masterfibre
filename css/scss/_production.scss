@@ -15,6 +15,7 @@
     .image {
         width: 750/1530*100%;
         height: 337px;
+        line-height: 337px;
         float: left;
         position: relative;
         text-align: center;
@@ -25,6 +26,7 @@
             object-fit: contain;
             //opacity: 0.3;
             display: inline-block;
+            vertical-align: bottom;
         }
 
         .mark {
@@ -39,6 +41,7 @@
             color: #fff;
             font-size: 12px;
             text-align: center;
+            text-transform: uppercase;
         }
     }
 
@@ -120,34 +123,115 @@
 
 
 @media screen and (max-width: 1600px) {
-    
+    .slider_secondary {
+        width: 65%;
+    }
+    .primary_item .image {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
-    
+    #production {
+        .in {
+            padding-top: 60px;
+            padding-bottom: 35px;
+        }
+    }
+    .slider_secondary {
+        width: 60%;
+        .slick-track {
+            left: -50%;
+        }
+    }
+    .primary_item {
+        .image {
+            width: 50%;
+        }
+        .info {
+            padding-left: 45px;
+        }
+    } 
+    .item-2 .slider_secondary {
+        left: 13%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider_secondary {
+        width: 53%;
+        margin: 0 -15px 60px;
+        padding: 0 5px;
+    }
+    .item-2 .slider_secondary {
+        left: 9%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    
+    #production {
+        .in {
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+    }
+    .primary_item .image .mark {
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
 }
 
-// @media screen and (max-width: 900px) {
-//     footer {
-
-//     }
-// }
-
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 800px) {
+    .slider_secondary {
+        width: 52%;
+        .slick-track {
+            left: -100%;
+        }
+    }
+    .item-2 .slider_secondary {
+        left: auto;
+        width: 52%;
+    }
 }
-@media screen and (max-width: 500px) {
-	
+@media screen and (max-width: 600px) {
+    .slider_primary {
+        margin: 0 0 50px;
+        .slick-arrow {
+            top: 250px
+        }
+    }
+    .primary_item {
+        .image {
+            width: 100%;
+            float: none;
+        }
+        .info {
+            padding-left: 45px;
+            margin-left: 0;
+            padding-left: 0;;
+        }
+    } 
+    .slider_secondary {
+        display: none;
+    }
 }
-// @media screen and (max-width: 450px) {
-// 	footer {
-
-// 	}
-// }
+@media screen and (max-width: 450px) {
+    .slider_primary {
+        margin: 0 0 30px;
+        .slick-arrow {
+            top: 170px
+        }
+    }
+    .primary_item {
+        .image {
+            height: 200px;
+            line-height: 200px;
+        }
+    } 
+}
 
 
 

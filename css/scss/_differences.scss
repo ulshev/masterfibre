@@ -30,7 +30,7 @@
     background-color: #fff;
     border-radius: 13px;
     position: relative;
-    padding: 60px 50px 50px 60px;
+    padding: 60px 40px 50px 60px;
     width: 50%;
 
     &::after {
@@ -95,31 +95,115 @@
 }
 
 
-@media screen and (max-width: 1600px) {
-    
+@media screen and (max-width: 1700px) {
+    .differences_block {
+        padding: 60px 60px 50px 60px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
-    
+    .differences_block {
+        padding: 60px 20px 30px 20px;
+        .h2 {
+            margin-bottom: 30px;
+        }
+    }
+    #pros {
+        .in {   
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    
+    #pros {
+        .in {   
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+    }
+    .differences_block {
+        padding: 40px 20px 10px 20px;
+        .h2 {
+            margin-bottom: 20px;
+            height: 50px;
+            max-width: 300px;
+        }
+        ul li {
+            padding-left: 37px;
+            margin-bottom: 15px;
+            background-position: left top;
+            background-size: auto 25px;
+        }
+    }
+    .differences_block.masterF::after {
+        width: 170px;
+        height: 100px;
+        top: -25px;
+    }
+    .differences_block.analog::after {
+        width: 100px;
+        height: 100px;
+        top: -25px;
+        left: 78.7%;
+    }
+    .differences_block.analog {
+        ul li {
+            background-position:  left 5px;
+        }
+    }
 }
 
-// @media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
+    .differences {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        display: block;
+    }
+    
+    .differences_block {
+        //padding-top: 30px;
+        width: auto;
+        margin-bottom: 20px;
+        .h2 {
+            margin-bottom: 20px;
+            height: auto;
+            max-width: none;
+        }
+    }
+    .differences_block.masterF {
+        margin-right: 0;
+    }
+    .differences_block.analog {
+        margin-left: 0;
+    }
+}
 
+// @media screen and (max-width: 600px) {
+    
 // }
-
-@media screen and (max-width: 700px) {
-    
-}
-@media screen and (max-width: 500px) {
+// @media screen and (max-width: 500px) {
 	
-}
-// @media screen and (max-width: 450px) {
-
 // }
+@media screen and (max-width: 450px) {
+    #pros {
+        .in {   
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    }
+    .differences {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .differences_block {
+        padding: 20px 10px 10px 10px;
+        &::after {
+            display: none;
+        }
+    }
+}
 
 
 

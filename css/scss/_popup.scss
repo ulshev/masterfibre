@@ -80,6 +80,9 @@
         float: right;
         width: 280px;
     }
+    .gUniForm .uFormSubmit, .gUniFormSuccessButton {
+        width: 100%;
+    }
 
     .gUniForm .uFormButton:last-child {
         padding-left: 0px;
@@ -137,11 +140,8 @@
         .gUniFormModalWindowContainer {
             width: 695px;
         }
-
-        &.modal_big {
-            .gUniFormModalWindowContainer {
-                width: 995px;
-            }
+        .gUniFormContainer {
+            padding: 60px 50px 20px;
         }
     }
 }
@@ -167,18 +167,20 @@
         }
         .personalInfo {
             width: 250px;
+            label {
+                margin-bottom: 20px;
+            }
         }
-        &.modal_big {
-            .gUniFormModalWindowContainer {
-                width: 895px;
-            }
-            form {
-                max-width: 810px;
-            }
+        .gUniForm .uformTools {
+            width: 255px;
         }
     }
 }
-
+@media screen and (max-width: 1100px) {
+    .gUniFormModalWindow.form_block .gUniForm input[type=text] {
+        height: 50px;
+    }
+}
 @media screen and (max-width: 1000px) {
     .gUniFormModalWindow.form_block {
         .gUniFormModalWindowContainer {
@@ -212,11 +214,6 @@
                 float: none;
             }
         }
-        &.modal_big {
-            .gUniFormModalWindowContainer {
-                width: 550px;
-            }
-        }
     }
 }
 
@@ -232,7 +229,7 @@
         form {
             padding-bottom: 10px;
         }
-        &.modal_big {
+        &.modal2 {
             .gUniFormModalWindowContainer {
                 width: 450px;
             }
@@ -255,7 +252,7 @@
             font-size: 14px;
             line-height: 18px;
         }
-        &.modal_big {
+        &.modal2 {
             .gUniFormModalWindowContainer {
                 width: 350px;
             }
@@ -267,7 +264,13 @@
         .gUniFormModalWindowContainer {
             width: 280px;
         }
-        &.modal_big {
+        p {
+            font-size: 13px;
+        }
+        .personalInfo {
+            font-size: 12px;
+        }
+        &.modal2 {
             .gUniFormModalWindowContainer {
                 width: 280px;
             }

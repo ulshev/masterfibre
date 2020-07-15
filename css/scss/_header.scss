@@ -114,6 +114,11 @@
 	.order_call {
 		border-bottom: 2px dashed #FFD300;
 		line-height: 23px;
+
+		&:hover {
+			border-color: transparent;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -167,7 +172,7 @@
 		padding: 3px 0px 3px 0px;
 		
 		&:hover  {
-			text-decoration: underline;
+			color: $color_a;
 		}
 	}
 

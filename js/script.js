@@ -67,7 +67,7 @@ $(document).ready(function() {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top - 100;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 1000);
     });
 	
 	$('.plus').click(function(){
@@ -167,7 +167,7 @@ $(document).ready(function() {
 	    asNavFor: '.production.item-4 .slider_secondary',
 	    responsive: [
 		  {
-		    breakpoint: 451,
+		    breakpoint: 601,
 		    settings: {
 		      arrows: true,
 		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
@@ -189,9 +189,15 @@ $(document).ready(function() {
 	    focusOnSelect: true,
 	    responsive: [
 		  {
-		    breakpoint: 801,
+		    breakpoint: 1301,
 		    settings: {
 		      slidesToShow: 2,
+		    }
+		  },
+		  {
+		    breakpoint: 801,
+		    settings: {
+		      slidesToShow: 1,
 		    }
 		  },
 		]
@@ -238,6 +244,20 @@ $(document).ready(function() {
 	    arrows: true,
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		responsive: [
+			{
+				breakpoint: 1301,
+				settings: {
+				  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 1001,
+				settings: {
+				  slidesToShow: 1,
+				}
+			},
+		]
 	});
 
 	$('.certificates').slick({
@@ -256,7 +276,19 @@ $(document).ready(function() {
 				}
 			},
 			{
+				breakpoint: 801,
+				settings: {
+				  slidesToShow: 3,
+				}
+			},
+			{
 				breakpoint: 601,
+				settings: {
+				  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 451,
 				settings: {
 				  slidesToShow: 1,
 				}
@@ -265,7 +297,27 @@ $(document).ready(function() {
 	});
 
 
-
+	$(window).on('load resize', function(){
+		if ( window.innerWidth>801 && $('.application').hasClass('slick-initialized') ) {
+		  $('.application').slick('unslick');
+		} else if ( window.innerWidth<=801 && !$('.application').hasClass('slick-initialized') ) {
+		  $('.application').slick({
+		    prevArrow: '<span class="slick-prev"></span>',
+		    nextArrow: '<span class="slick-next"></span>',
+		    slidesToShow: 2,
+			adaptiveHeight: true,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 601,
+					settings: {
+					  slidesToShow: 1,
+					}
+				},
+			]
+		  });
+		}
+	});
 
 
 
