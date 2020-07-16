@@ -228,12 +228,12 @@
 		height: 100%;
 		top: 0;
 		right: 0;
-				pointer-events: none;
-			img {
-				position: absolute;
-			}
+		pointer-events: none;
+		img {
+			position: absolute;
+		}
 			
-			#parallax {
+		#parallax {
 				position: absolute;
 				top: 0px;
 				left: 0px;
@@ -260,8 +260,8 @@
 					left: 2.8%;
     				top: 92%;
 				}
-			}
 		}
+	}
     
 }
 
@@ -323,9 +323,9 @@
 				line-height: 35px;
 				margin-right: 5px;
 			}
-			.descr {
-				//text-align: left;
-			}
+			// .descr {
+			// 	//text-align: left;
+			// }
 		}
 		.pieces #parallax{
 			.layer:nth-child(1), .layer:nth-child(5) {
