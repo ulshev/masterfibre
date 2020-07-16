@@ -72,12 +72,12 @@ $(document).ready(function() {
 	
 	$('.plus').click(function(){
 		if ($(this).parent().children('.description').css("display") == "block") {
-		    $(this).parent().children('.description').slideUp(500);
+		    $(this).parent().children('.description').slideUp(300);
 		    $(this).removeClass('active');
 		}else{
 		    $('.description').slideUp(500);
 		    $('.plus').removeClass('active');
-		    $(this).parent().children('.description').slideDown(500);
+		    $(this).parent().children('.description').slideDown(300);
 		    $(this).addClass('active');
 		}
 	});
@@ -127,7 +127,7 @@ $(document).ready(function() {
 	}, 0); 
 	$(window).on('load scroll', function(){
 	    $('.main_section').each(function(){
-		if ( $(this).offset().top < ($(document).scrollTop() + window.innerHeight*0.9 ) ) {
+		if ( $(this).offset().top < ($(document).scrollTop() + window.innerHeight*0.6 ) ) {
 		    $(this).addClass('animated');
 		}
 	    });
@@ -144,9 +144,9 @@ $(document).ready(function() {
 	});
 
 	$(window).on('load resize', function(){
-		if ( window.innerWidth>1300 && $('.advantages').hasClass('slick-initialized') ) {
+		if ( window.innerWidth>1301 && $('.advantages').hasClass('slick-initialized') ) {
 		  $('.advantages').slick('unslick');
-		} else if ( window.innerWidth<=1300 && !$('.advantages').hasClass('slick-initialized') ) {
+		} else if ( window.innerWidth<=1301 && !$('.advantages').hasClass('slick-initialized') ) {
 		  $('.advantages').slick({
 		    prevArrow: '<span class="slick-prev"></span>',
 		    nextArrow: '<span class="slick-next"></span>',

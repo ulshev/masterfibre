@@ -42,6 +42,7 @@
 
     &.masterF {
         margin-right: 15px;
+        z-index: 1;
 
         &::after {
             background-image:  url(images/kangaroo.png);
