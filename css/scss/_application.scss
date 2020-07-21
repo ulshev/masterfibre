@@ -2,6 +2,7 @@
 
 #usage {
     background:  url(images/bg_application.jpg) center top no-repeat;
+    background-size: cover;
     .in {
         padding-top: 90px;
         padding-bottom: 60px;
@@ -168,8 +169,6 @@
         }
     }
 }
-
-
 // @media screen and (max-width: 800px) {
     
 // }
